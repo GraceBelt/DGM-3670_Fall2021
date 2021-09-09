@@ -1,0 +1,59 @@
+polySphere -r 6 -sx 20 -sy 20 -ax 0 1 0 -cuv 2 -ch 1;
+polySphere -r 4 -sx 20 -sy 20 -ax 0 1 0 -cuv 2 -ch 1;
+move -r 0 7.462492 0 ;
+polySphere -r 2 -sx 20 -sy 20 -ax 0 1 0 -cuv 2 -ch 1;
+move -r 0 12.71076 0 ;
+duplicate -rr;
+select -r pSphere4; 
+scale -r 0.1 0.1 0.1;
+move -r 0 0 2;
+move -r -1.013101 0 0 ;
+move -r 0 0 -0.373183 ;
+duplicate -rr;
+select -r pSphere5; 
+move -r 1.962699 0 0 ;
+polyCone -r 0.2 -h 2 -sx 20 -sy 1 -sz 0 -ax 0 1 0 -rcp 0 -cuv 3 -ch 1;
+rotate -r -os -fo 0 0 -90.211683 ;
+rotate -r -os -fo 89.045765 0 0 ;
+move -r 0 12.529215 0 ;
+move -r 0 0 2.940137 ;
+polyCylinder -r 1 -h 2 -sx 20 -sy 1 -sz 1 -ax 0 1 0 -rcp 0 -cuv 3 -ch 1;
+scale -r 1 0.0839854 1 ;
+move -r 0 14.600163 0 ;
+scale -r 3.178078 3.178078 3.178078 ;
+scale -r 1 0.474868 1 ;
+move -r 0 -0.757399 0 ;
+polyCylinder -r 1 -h 2 -sx 20 -sy 1 -sz 1 -ax 0 1 0 -rcp 0 -cuv 3 -ch 1;
+move -r 0 14.83989 0 ;
+scale -r 1.65437 1.65437 1.65437 ;
+
+rename "pCylinder2" "Top_Geo";
+rename "pCylinder1" "Second_Geo";
+rename "pSphere3" "Head_Geo";
+rename "pSphere5" "Left Eye_Geo";
+rename "pSphere4" "Right Eye_Geo";
+rename "pCone1" "Nose_Geo";
+rename "pSphere2" "Torso_Geo";
+rename "pSphere1" "Bottom_Geo";
+
+parent "Second_Geo" "Top_Geo";
+parent "Right_Eye_Geo" "Head_Geo";
+parent "Left_Eye_Geo" "Head_Geo";
+parent "Nose_Geo" "Head_Geo";
+parent "Bottom_Geo" "Torso_Geo";
+parent "Torso_Geo" "Head_Geo";
+parent "Head_Geo" "Top_Geo";
+
+select -r Right_Eye_Geo Left_Eye_Geo Nose_Geo ;
+doGroup 0 1 1; 
+rename "group1" "Face_Group";
+reorder -relative -1 Face_Group ;
+select -r Top_Geo; 
+doGroup 0 1 1;
+rename "group1" "Geometry_Group";
+
+
+
+
+
+
