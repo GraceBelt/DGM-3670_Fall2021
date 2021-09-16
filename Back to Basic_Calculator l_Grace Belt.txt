@@ -1,0 +1,47 @@
+print (2 + 3 + 4); 
+
+print ((2 + 3) * 4); 
+
+$name = 5;
+$name = $name * 3;
+
+$salt = 5;
+$salt = $salt / 2; 
+
+string $firstName = "Alexander";
+string $lastName = "Hound"; 
+string $fullName = $firstName + " " + $lastName;
+
+int $a = 20; 
+int $b = 9;
+print ($a - ($b * ($a / $b)));
+
+print (30 / 3); 
+
+//if/else statement
+int $num = 6;
+if ($num < 15)
+{
+    print ($num + "is an even.\n"); 
+}
+else 
+{
+    print ($num + "is not an odd.\n");
+};
+
+//For, while, and < means less than
+int $sugar = 3; 
+while ($sugar < 210)
+{
+    $sugar = $sugar * 8; 
+    print ("$sugar is equal to" + $sugar + "\n");
+};
+
+int $num;
+for ($num = 0; $num < 25; $num++)
+{
+    print ($num + "\n"); 
+}
+
+//Ask Clayton about warnings, when I tried to copy and paste it? 
+
