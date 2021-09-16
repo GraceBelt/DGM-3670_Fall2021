@@ -29,7 +29,7 @@ else
     print ($num + "is not an odd.\n");
 };
 
-//For, while, and < means less than
+//For, while statements, and < means less than
 int $sugar = 3; 
 while ($sugar < 210)
 {
@@ -42,6 +42,15 @@ for ($num = 0; $num < 25; $num++)
 {
     print ($num + "\n"); 
 }
+
+//Return statement
+proc int square (int $lowsugar) 
+{
+    int $squared_low = $lowsugar * $lowsugar;
+    return $squared_low;
+}
+
+print (square(16));
 
 //Ask Clayton about warnings, when I tried to copy and paste it? 
 
