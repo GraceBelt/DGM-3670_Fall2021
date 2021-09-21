@@ -1,0 +1,97 @@
+//Notetaking for the assignment "Back to Basics - Calculator 1 
+//What is "Power"?
+//What is "Mean"? 
+//The mean is the arithmetic average of a set of given numbers. 
+
+//What is "Median"?
+//The median is the middle score in a set of given numbers. 
+
+//What is "Mode"?
+//The mode is the most frequently occurring score in a set of given. 
+
+//NOTE: https://www.verywellmind.com/how-to-identify-and-calculate-the-mean-median-or-mode-2795785
+
+Questions
+1) Does it need to be one script for the whole? Or does it need to be 8 scripts for 
+each function? For to copy and paste it. 
+------------------------------------------------------------------
+//The example of Return Statements/Scope
+
+//Example 1
+global float()
+{
+
+Create a function {}
+return; 
+
+}
+
+Put whatever it is addition, subtraction, division, multiplication, and others (); 
+
+//Example 2 
+global proc ()
+{
+
+Create a function {}
+return; 
+
+}
+
+//Put whatever it is addition, subtraction, division, multiplication, and others (); 
+
+//Example 3
+proc ()
+{
+
+Create a function {}
+return; 
+
+}
+
+//Put whatever it is addition, subtraction, division, multiplication, and others (); 
+//This gives a result
+
+//Example 4
+global proc float ()
+{
+
+Create a function
+return; 
+
+}
+
+//Put whatever it is addition, subtraction, division, multiplication, and others (); 
+//This gives a result 
+------------------------------------------------------------------
+//1) Sum (+)
+- if/else statement
+- for, while statement
+
+//2) Difference (-)
+- if/else statement
+- for, while statement
+
+//3) Multiplication (*) 
+- if/else statement
+- for, while statment 
+
+//4) Division (/)
+- if/else statement
+- for, while statement
+
+//5) Power 
+- if/else statement 
+- for, while statement
+
+//6) Mean (or average) 
+- if/else statement 
+- for, while statement
+
+//7) Median 
+- if/else statement 
+- for, while statement
+
+//8) Mode
+- if/else statement 
+- for, while statement 
+
