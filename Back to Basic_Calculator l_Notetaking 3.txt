@@ -1,0 +1,21 @@
+// 1)Mean = Addition then Division, and Even numbers. 
+//30 days [2, 6, 8, 10]
+//The result of Addition = 26
+//30 / 26 = 1.153 
+
+//On Script Editor, I am practicing, but for some reason, it is showing error. 
+This is just my learning and sees how it works, I won't be using this for my assignment. 
+
+global proc float Addition (float $num[])
+{
+        float $sum = $num[0];
+        
+        for ($i=1; $1<size($num); $i++)
+        {
+            $sum += $num[$i];
+        }
+        
+        return $sum; 
+}
+
+Addition({3, 5, 6}); 

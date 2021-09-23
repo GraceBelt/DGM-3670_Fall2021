@@ -1,7 +1,8 @@
 //Notetaking for the assignment "Back to Basics - Calculator 1 
 //What is "Power"?
 //What is "Mean"? 
-//The mean is the arithmetic average of a set of given numbers. 
+//The mean is the arithmetic average of a set of given numbers. The average is calculated by
+adding up two or more scores and dividing the total by the number of scores. 
 
 //What is "Median"?
 //The median is the middle score in a set of given numbers. 
@@ -16,6 +17,17 @@ Questions
 each function? For to copy and paste it. 
 ------------------------------------------------------------------
 //The example of Return Statements/Scope
+
+global proc add(number1, number2)
+{
+	return number1 + number2;
+
+}
+
+add(3,3);
+
+float number = add(4,4); = 8
+//Above is the variable and shows return in result how it works. 
 
 //Example 1
 global float()
@@ -86,6 +98,10 @@ return;
 //6) Mean (or average) 
 - if/else statement 
 - for, while statement
+- Set of given numbers (2 + 4 + 6 + 9 + 12 = 33) (33/5 = 6.6), perhas even numbers. 
+- The mean is the arithmetic average of a set of given numbers. The average is calculated by
+adding up two or more scores and dividing the total by the number of scores. 
+-
 
 //7) Median 
 - if/else statement 
