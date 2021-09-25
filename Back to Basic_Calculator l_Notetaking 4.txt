@@ -1,0 +1,34 @@
+//1) Additition, for statement
+global proc float Addition (float $num [])
+{
+    float $sum = 0;
+    
+    for ($i=0; $i<size($num); $i++)
+    {
+        $sum  += $num[$i];
+    }
+    
+    return $sum;
+}
+
+Addition ({2, 4, 6, 8, 10, 12, 14, 16}); 
+
+//2) Subtraction, for statement
+global proc float Subtraction(float $num [])
+{
+    float $sub = 0;
+    
+    for ($i=0; $i<size($num); $i++)
+    {
+        $sub  -= $num[$i];
+    }
+    
+    return $sub;
+}
+
+Subtraction ({4, 8, 12, 16, 20, 24}); 
+
+//3) Multiplication, for statement
+//4) Division, for statement
+//5) Mean, if/else statement
+//6) 

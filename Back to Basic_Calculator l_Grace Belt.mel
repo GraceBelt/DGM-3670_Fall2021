@@ -1,0 +1,106 @@
+global proc float Calculator (float $num, string $running)
+{
+    float $return; 
+
+    if($running == "add")
+    {
+        $return = Addition($num);
+    }
+    else if ($running = "subtract")
+    {
+        $return = Subtraction ($num);
+    }
+    else if ($running = "multiply")
+    {
+        $return = Multiplication($num);
+    }
+    else if ($running = "divide")
+    {
+        $return = Division($num);
+    }
+    else if ($running = "power")
+    {
+        $return = Power($num);
+    }
+    else if ($running = "mean")
+    {
+        $return = Mean($num);
+    }
+    else if ($running = "median")
+    {
+        $return = Median($num);
+    }
+    else if ($running = "mode")
+    {
+        $return = Mode($num);
+    }
+}
+
+global proc float Addition (float $num[])
+{
+    float $a = 0;
+
+    for ($i=0; $i<size($num); $i++)
+    {
+        $a += $num[$i];
+    }
+
+    return $a; 
+}
+
+global proc float Subtraction (float $num[])
+{
+    float $a = 0;
+
+    for($i=0; $i<size($num); $i++)
+    {
+        $a -= $num[$i];
+    }
+
+    return $a; 
+}
+
+global proc float Multiplication (float $num[])
+{
+    float $a = 2; 
+
+    for($i=0; $i<size($num); $i++)
+    {
+        $a *= $num[$i];
+    }
+
+    return $a;
+}
+
+global proc float Division (float $num[])
+{
+    float $a = 2;
+
+    for($i=0; $i<size($num); $i++)
+    {
+        $a /= $num[$i];
+    }
+
+    return $a; 
+}
+
+global proc float Power (float $num int $string)
+{
+    
+
+}
+
+global proc float Mean(float $num[])
+{
+    
+}
+
+global proc float Median (float $num[])
+{
+    
+}
+
+global proc float Mode (float $num[])
+{
+    
+}

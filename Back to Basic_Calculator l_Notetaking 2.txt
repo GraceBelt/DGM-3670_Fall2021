@@ -1,3 +1,5 @@
+https://courses.cs.washington.edu/courses/cse459/06wi/help/mayaguide/Complete/MEL_Expressions.pdf
+
 //Notetaking for the assignment "Back to Basics - Calculator 1 
 //What is "Power"?
 //What is "Mean"? 
