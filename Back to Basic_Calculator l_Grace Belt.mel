@@ -1,3 +1,17 @@
+//The four functions of Addition, Subtraction, Multiplication are the same thing. 
+//+= means add or to equal 
+//-= means subtract or to equal
+//*= means multiply or to equal
+// /= means divide or to equal
+//Mean means Addition then to divide, also even numbers. 
+//Power is the expondent for example, 3^6 = 3 x 3 x 3 x 3 x 3 x 3
+//Median arrange your numbers in numerical order. Also, the second step is adding numbers. 
+//Mode is creating a frequency and the number distibution. 
+//However, Multiplication and Division for float $a = 0; it is needed to be all zero. 
+//In order to store it for Multiplication and Division. 
+
+/*float $num[] = {2, 4, 5};
+
 global proc float Calculator (float $num, string $running)
 {
     float $return; 
@@ -18,23 +32,7 @@ global proc float Calculator (float $num, string $running)
     {
         $return = Division($num);
     }
-    else if ($running = "power")
-    {
-        $return = Power($num);
-    }
-    else if ($running = "mean")
-    {
-        $return = Mean($num);
-    }
-    else if ($running = "median")
-    {
-        $return = Median($num);
-    }
-    else if ($running = "mode")
-    {
-        $return = Mode($num);
-    }
-}
+}*/
 
 global proc float Addition (float $num[])
 {
@@ -48,6 +46,8 @@ global proc float Addition (float $num[])
     return $a; 
 }
 
+Addition({2, 4, 5});
+
 global proc float Subtraction (float $num[])
 {
     float $a = 0;
@@ -60,9 +60,11 @@ global proc float Subtraction (float $num[])
     return $a; 
 }
 
+Subtraction({1, 3, 5});
+
 global proc float Multiplication (float $num[])
 {
-    float $a = 2; 
+    float $a = 1; 
 
     for($i=0; $i<size($num); $i++)
     {
@@ -72,9 +74,11 @@ global proc float Multiplication (float $num[])
     return $a;
 }
 
+Multiplication ({4, 4, 5});
+
 global proc float Division (float $num[])
 {
-    float $a = 2;
+    float $a = 1;
 
     for($i=0; $i<size($num); $i++)
     {
@@ -84,10 +88,11 @@ global proc float Division (float $num[])
     return $a; 
 }
 
+Division({5, 2});
+
 global proc float Power (float $num int $string)
 {
     
-
 }
 
 global proc float Mean(float $num[])
