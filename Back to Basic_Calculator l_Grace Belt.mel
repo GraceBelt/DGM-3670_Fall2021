@@ -3,12 +3,9 @@
 //-= means subtract or to equal
 //*= means multiply or to equal
 // /= means divide or to equal
-//Mean means Addition then to divide, also even numbers. 
-//Power is the expondent for example, 3^6 = 3 x 3 x 3 x 3 x 3 x 3
-//Median arrange your numbers in numerical order. Also, the second step is adding numbers. 
-//Mode is creating a frequency and the number distibution. 
 //However, Multiplication and Division for float $a = 0; it is needed to be all zero. 
 //In order to store it for Multiplication and Division. 
+//I need to do arrangment 
 
 /*float $num[] = {2, 4, 5};
 
@@ -46,7 +43,7 @@ global proc float Addition (float $num[])
     return $a; 
 }
 
-Addition({2, 4, 5});
+Addition({4, 5, 6});
 
 global proc float Subtraction (float $num[])
 {
@@ -60,12 +57,29 @@ global proc float Subtraction (float $num[])
     return $a; 
 }
 
-Subtraction({1, 3, 5});
+Subtraction({5, 7, 9});
 
-global proc float Multiplication (float $num[])
+global proc float Multiplication (float $num[]) 
 {
-    float $a = 1; 
+    //Need to figure this out and create a result
+    
+    /*function (array[])
+    {
+        var a; 
+        var b;
+        var result;
+    }
+    for (i =0; i<arry.cound;i++{
+        a = array [i];
+        b = array[i+1]
+        result = a*b;
+    }
+    return  result;*/ 
 
+    //Study Array 
+
+    float $a = 0; 
+    
     for($i=0; $i<size($num); $i++)
     {
         $a *= $num[$i];
@@ -74,11 +88,13 @@ global proc float Multiplication (float $num[])
     return $a;
 }
 
-Multiplication ({4, 4, 5});
+Multiplication ({});
 
 global proc float Division (float $num[])
 {
-    float $a = 1;
+    //Need to figure this out and create a result. 
+
+    float $a = 0;
 
     for($i=0; $i<size($num); $i++)
     {
@@ -88,24 +104,32 @@ global proc float Division (float $num[])
     return $a; 
 }
 
-Division({5, 2});
+Division({});
 
 global proc float Power (float $num int $string)
 {
-    
+    //Power is the expondent for example, 3^6 = 3 x 3 x 3 x 3 x 3 x 3
 }
+
+Power ({});
 
 global proc float Mean(float $num[])
 {
-    
+    //Mean means Addition then to divide, also even numbers. 
 }
+
+Mean({});
 
 global proc float Median (float $num[])
 {
-    
+    //Median arrange your numbers in numerical order. Also, the second step is adding numbers. 
 }
+
+Median ({});
 
 global proc float Mode (float $num[])
 {
-    
+    //Mode is creating a frequency and the number distibution. 
 }
+
+Mode ({});

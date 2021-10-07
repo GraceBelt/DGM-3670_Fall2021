@@ -1,0 +1,41 @@
+
+Example #1
+global proc float Median (float $a[])
+{
+	float $b = size($a);
+	
+	$a = sort($a);
+
+	if($b & 2 == 0){
+	//Even
+	}
+	else
+	{
+	//Odd 
+	}
+
+	return $name; 
+}
+
+Median ({}); //question about the values. 
+
+Example #2
+global proc float Median (float $name[])
+{
+	if(){
+	
+	}
+	else
+	{
+
+	}
+	return; 
+}
+
+Median({});
+
+Study about arrangements and size. 
+
+$size divide by 2, then subtract 3?
+
+Ask Clayton about steps. 

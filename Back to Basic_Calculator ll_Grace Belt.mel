@@ -1,0 +1,74 @@
+global proc float Calculator (float $array[])
+{
+    float $array[7] = {12, 7, 14, 5, 7, 11, 9}; 
+    
+    switch ()
+    {
+        case "Add":
+            return Addition($array)
+            {
+                print($array);
+                break;
+            }
+        case "Sub":
+            return Subtraction($array)
+            {
+                print($array);
+                break;
+            }
+    }
+}
+
+global proc float Addition (float $array[])
+{
+    float $a = 0; 
+
+    for ($i=0; $i<size($array); $i++)
+    {
+        $a += $array[$i];
+    }
+
+    return $a;
+}
+
+global proc float Subtraction (float $array[])
+{
+    float $a = 0; 
+
+    for ($i=0; $i<size($array); $i++)
+    {
+        $a -= $array[$i];
+    }
+
+    return $a;
+}
+
+global proc float Multiplication (float $array[])
+{
+
+}
+
+global proc float Division (float $array[])
+{
+
+}
+
+global proc float Power ()
+{
+
+}
+
+global proc float Mean (float $array[])
+{
+
+}
+
+global proc float Median (float $array[])
+{
+
+}
+
+global proc float Mode (float $array[])
+{
+    
+}
