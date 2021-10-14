@@ -1,0 +1,13 @@
+global proc Duplicate (float $minX, float $maxX, string $obj, int $count)
+{
+    polyCube; 
+    
+    for ($i = 0; $i < $count; $i++)
+    { 
+        float $rand = rand ($minX, $maxX);
+        duplicate $obj move -r $rand $rand $rand; 
+        rotate -r $rand $rand $rand; 
+    }
+}
+
+Duplicate (0, 3, "pCube1", 6);
