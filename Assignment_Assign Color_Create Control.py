@@ -28,6 +28,7 @@ d = ['Shoulder_Ctrl', 'Elbow_Ctrl', 'Wrist_Ctrl']
 Group1 = ['Shoulder_Geo', 'Shoulder_Ctrl']
 Group2 = ['Elbow_Geo', 'Elbow_Ctrl']
 Group3 = ['Wrist_Geo', 'Wrist_Ctrl']
+Color = ["Shoulder_Ctrl", "Elbow_Ctrl", "Wrist_Ctrl"]
 
 for sel in sels:
     cmds.rename(a[0], b[0])
@@ -44,4 +45,10 @@ for sel in sels:
     cmds.parent('Wrist_Ctrl', 'Wrist_Geo')
     cmds.move(0, 0, -1.527, 'Shoulder_Geo', absolute=True) 
     cmds.move(-2.493, 0, 0.459, 'Elbow_Geo', absolute=True) 
-    cmds.move(0, 0, 2.483, 'Wrist_Geo', absolute=True) 
+    cmds.move(0, 0, 2.483, 'Wrist_Geo', absolute=True)
+    Red = Color[0]
+    Green = Color[1]
+    Blue = Color[2]
+    cmds.color(Red, rgb=(1, 0, 0))
+    cmds.color(Green, rgb=(0, 1, 0))
+    cmds.color(Blue, rgb=(0, 0, 1))
